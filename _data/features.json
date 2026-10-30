@@ -1,0 +1,14 @@
+[
+  {
+    "title": "Company Treasury",
+    "description": "Let’s build your company’s Bitcoin strategy with confidence. Your future treasury starts here.",
+    "cta": {
+      "class": "primary",
+      "text": "Book a free 15-minute introduction call",
+      "url": "/contact"
+    },
+    "image": {
+      "url": "images/features/company_treasury.svg"
+    }
+  }
+]

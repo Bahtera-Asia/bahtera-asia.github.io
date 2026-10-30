@@ -1,0 +1,11 @@
+{
+  "originRepo": "https://github.com/zerostaticthemes/jekyll-serif-theme",
+  "title": "Bahtera",
+  "description": "Institution-level Bitcoin consultancy in Indonesia, Malaysia, and Singapore.",
+  "categories": {
+    "ssg": ["jekyll"],
+    "css": ["bootstrap", "scss"],
+    "archetype": ["business"],
+    "features": ["netlify", "github-pages"]
+  }
+}

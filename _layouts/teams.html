@@ -1,0 +1,13 @@
+---
+layout: default
+bodyClass: page-teams
+---
+<header class="page-heading container"><span class="eyebrow">Our people</span><h1>Experience, brought together.</h1><div class="lead">{{ content }}</div></header>
+<section class="container team-section" aria-labelledby="founding-title"><span class="eyebrow">Founding team</span><h2 id="founding-title" class="team-section-title">The people who started Bahtera.</h2></section>
+<section class="container three-grid team-grid" aria-labelledby="founding-title">{% assign people = site.team | where: 'group', 'founding' | sort: 'weight' %}{% for person in people %}
+<article class="profile-card"><img class="portrait" src="{{ person.image | relative_url }}" alt="{{ person.title }}"><span class="eyebrow">{{ person.jobtitle }}</span><h2><a href="{{ person.url | relative_url }}">{{ person.title }}</a></h2><p>{{ person.quote }}</p><a class="text-link" href="{{ person.url | relative_url }}">Read profile &rarr;</a></article>{% endfor %}</section>
+<section class="container team-section" aria-labelledby="partners-title"><span class="eyebrow">Regional partners</span><h2 id="partners-title" class="team-section-title">Local partners across Asia.</h2></section>
+<section class="container three-grid team-grid" aria-labelledby="partners-title">{% assign partners = site.team | where: 'group', 'partner' | sort: 'weight' %}{% for person in partners %}
+<article class="profile-card"><img class="portrait" src="{{ person.image | relative_url }}" alt="{{ person.title }}"><span class="eyebrow">{{ person.country }}</span><h2><a href="{{ person.url | relative_url }}">{{ person.title }}</a></h2><p>{{ person.quote }}</p><a class="text-link" href="{{ person.url | relative_url }}">Read profile &rarr;</a></article>{% endfor %}</section>
+{% include regional-map.html %}
+{% include section-cta.html %}

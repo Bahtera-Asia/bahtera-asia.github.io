@@ -1,0 +1,6 @@
+# Add verified company contact details before enabling email links.
+email: ''
+phone: ''
+contact_button_link: '/contact/'
+# Google Calendar appointment page for the free 15-minute introduction call.
+booking_url: 'https://calendar.app.google/ZdxecGuBL7aTY2HK6'
